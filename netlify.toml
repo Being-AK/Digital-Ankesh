@@ -3,9 +3,7 @@
   publish = "dist"
   functions = "netlify/functions"
 
-# Catch-all redirect for Single Page Application (SPA) routing
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
-

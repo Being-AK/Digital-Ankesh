@@ -50,7 +50,14 @@ async function startServer() {
 
     // Get RapidAPI Key and Host
     const apiKey = process.env["X-RapidAPI-Key"] || process.env.X_RAPIDAPI_KEY || process.env.RAPIDAPI_KEY;
-    const apiHost = process.env.RAPIDAPI_HOST || "powerful-gstin-tool.p.rapidapi.com";
+    const apiHost = process.env.RAPIDAPI_HOST;
+
+    if (!apiHost) {
+      throw {
+        status: 500,
+        message: "RAPIDAPI_HOST environment variable is missing."
+      };
+    }
 
     let results: any = null;
     let source = "GST Common Portal (Live)";
