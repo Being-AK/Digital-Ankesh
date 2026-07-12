@@ -1,0 +1,10 @@
+{
+  "name": "Ankesh Kumar | CA Portfolio",
+  "description": "Professional finance software portfolio featuring an offline PDF Toolkit, Compliance Workspace, GST Reconciliation Engine, AI Assistant Workspace, and ROC/MCA utilities.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
